@@ -63,10 +63,11 @@ public class Teleport : MonoBehaviour, ICardboardGazeResponder {
   }
 
   public void TeleportRandomly() {
-    Vector3 direction = Random.onUnitSphere;
-    direction.y = Mathf.Clamp(direction.y, 0.5f, 1f);
-    float distance = 2 * Random.value + 1.5f;
-    transform.localPosition = direction * distance;
+		Vector3 loc = new Vector3 (
+			Mathf.Clamp (UnityEngine.Random.value, -30f, 30f),
+			Mathf.Clamp (UnityEngine.Random.value, 1, 20),
+			5);
+	transform.localPosition = loc;
   }
 
   #region ICardboardGazeResponder implementation
