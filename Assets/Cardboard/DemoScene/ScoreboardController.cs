@@ -28,4 +28,9 @@ public class ScoreboardController : MonoBehaviour {
 	private void UpdateText() {
 		text.text = "KILLS: " + kills + "\nHITS: " + hits;
 	}
+
+	public void Reset() {
+		kills = 0;
+		hits = 0;
+	}
 }
