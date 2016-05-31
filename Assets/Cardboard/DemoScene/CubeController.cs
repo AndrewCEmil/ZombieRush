@@ -7,15 +7,18 @@ using System;
 public class CubeController : MonoBehaviour, ICardboardGazeResponder {
 
 	public GameObject player;
+	public GameObject scoreboard;
 
 	private Rigidbody rb;
 	private Rigidbody playerRb;
+	private ScoreboardController scoreboardController;
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		playerRb = player.GetComponent<Rigidbody> ();
 		SetGazedAt(false);
+		scoreboardController = scoreboard.GetComponent<ScoreboardController> ();
 	}
 
 	void LateUpdate() {
@@ -39,6 +42,7 @@ public class CubeController : MonoBehaviour, ICardboardGazeResponder {
 		if (other.CompareTag ("Player")) {
 			//Player has been struck
 			Handheld.Vibrate ();
+			scoreboardController.IncrementHits ();
 			TeleportToNewLocation ();
 		}
 	}
@@ -67,6 +71,7 @@ public class CubeController : MonoBehaviour, ICardboardGazeResponder {
 	// Called when the Cardboard trigger is used, between OnGazeEnter
 	/// and OnGazeExit.
 	public void OnGazeTrigger() {
+		scoreboardController.IncrementKills ();
 		TeleportToNewLocation();
 	}
 
