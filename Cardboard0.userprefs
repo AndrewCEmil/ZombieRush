@@ -1,21 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Cardboard/Prefabs/CubeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Cardboard/DemoScene/ViewTriangleController.cs">
     <Files>
-      <File FileName="Assets/Cardboard/Prefabs/CubeController.cs" Line="35" Column="67" />
-      <File FileName="Assets/Cardboard/Scripts/VRDevices/UnityEditorDevice.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/Scripts/UI/ICardboardGazeResponder.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/DemoScene/Teleport.cs" Line="69" Column="7" />
-      <File FileName="Assets/Cardboard/Scripts/Cardboard.cs" Line="636" Column="27" />
-      <File FileName="Assets/Cardboard/Scripts/GazeInputModule.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/Scripts/CardboardHead.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/DemoScene/FPS.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/Scripts/CardboardEye.cs" Line="1" Column="1" />
+      <File FileName="Assets/Cardboard/DemoScene/CubeController.cs" Line="36" Column="18" />
+      <File FileName="Assets/Cardboard/DemoScene/ScoreboardController.cs" Line="34" Column="12" />
+      <File FileName="Assets/Cardboard/DemoScene/ViewTriangleController.cs" Line="6" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/ace/Desktop/Cardboard0/Assets/Cardboard/Prefabs/CubeController.cs" line="37" column="1" />
+      <Breakpoint file="/Users/ace/Desktop/Cardboard0/Assets/Cardboard/Prefabs/CubeController.cs" line="50" column="1" />
+      <Breakpoint file="/Users/ace/Desktop/Cardboard0/Assets/Cardboard/Prefabs/CubeController.cs" line="56" column="1" />
+      <Breakpoint file="/Users/ace/Desktop/Cardboard0/Assets/Cardboard/DemoScene/CubeController.cs" line="20" column="1" />
+      <Breakpoint file="/Users/ace/Desktop/Cardboard0/Assets/Cardboard/DemoScene/CubeController.cs" line="74" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

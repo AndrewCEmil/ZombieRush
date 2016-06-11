@@ -49,6 +49,7 @@
      <Compile Include="Assets\Cardboard\DemoScene\FPS.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\ScoreboardController.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\Teleport.cs" />
+     <Compile Include="Assets\Cardboard\DemoScene\ViewTriangleController.cs" />
      <Compile Include="Assets\Cardboard\Scripts\Audio\CardboardAudio.cs" />
      <Compile Include="Assets\Cardboard\Scripts\Audio\CardboardAudioListener.cs" />
      <Compile Include="Assets\Cardboard\Scripts\Audio\CardboardAudioRoom.cs" />
