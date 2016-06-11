@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Cardboard\DemoScene\CubeController.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\FPS.cs" />
+     <Compile Include="Assets\Cardboard\DemoScene\RedSquareController.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\ScoreboardController.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\Teleport.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\ViewTriangleController.cs" />

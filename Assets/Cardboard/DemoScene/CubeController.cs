@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using System;
 
 [RequireComponent(typeof(Collider))]
 public class CubeController : MonoBehaviour, ICardboardGazeResponder {
@@ -47,10 +46,8 @@ public class CubeController : MonoBehaviour, ICardboardGazeResponder {
 		}
 	}
 	public void TeleportToNewLocation() {
-		Vector3 loc = new Vector3 (
-			(UnityEngine.Random.value - .5f) * 60,
-			UnityEngine.Random.value * 20f,
-			5);
+		Vector3 loc = Random.onUnitSphere * 15;
+		loc.y = Mathf.Clamp (loc.y, 1, 20);
 		transform.localPosition = loc;
 	}
 
