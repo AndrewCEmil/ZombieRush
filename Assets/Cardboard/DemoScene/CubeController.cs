@@ -46,7 +46,7 @@ public class CubeController : MonoBehaviour, ICardboardGazeResponder {
 		}
 	}
 	public void TeleportToNewLocation() {
-		Vector3 loc = Random.onUnitSphere * 15;
+		Vector3 loc = Random.onUnitSphere * 30;
 		loc.y = Mathf.Clamp (loc.y, 1, 20);
 		transform.localPosition = loc;
 	}
